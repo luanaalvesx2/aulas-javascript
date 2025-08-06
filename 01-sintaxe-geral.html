@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sintaxe geral do JS</title>
+</head>
+<body>
+    <h1>Começando com JavaScript</h1>
+    <hr>
+
+    <script>
+    /* comentário de várias linhas (SHIFT ALT A) */
+    // comentário de uma linha (CTRL ;)
+
+    // Comando de saída útil para testes
+    console.log("Hello World");
+
+    /* Manipulação de dados na MEMÓRIA RAM */
+    
+    // Variável: declaradas com a palavra-chave let
+    let ano = 2025;
+
+    // Constante: declaradas com a palavra-chave const
+    const aluno = "Chapolin Colorado";
+
+    // Saída (acessando/exibindo os dados)
+    console.log(ano);
+    console.log(aluno);
+    
+    // Declarando variáveis sem definir valores
+    let teste1;
+
+    console.log(teste1);
+
+    // Atribuindo valor a uma variável
+    teste1 = "Valor do teste1";
+    console.log(teste1);
+
+    // Lista de variáveis
+    let teste2, teste3, teste4;
+
+    /* Exercícios */
+    
+    // 1) Crie duas variáveis cada uma contendo um valor numérico (qualquer valor)
+    let valor1 = 10;
+    let valor2 = 5;
+
+    // 2) Crie uma variável chamada "soma" que receba a soma das duas variáveis criadas no exercício 1
+    let soma = valor1 + valor2;
+
+    // 3) Crie uma variável chamada "subtracao" que receba a subtração das duas variáveis criadas no exercício 1
+    let subtracao = valor1 - valor2;
+    
+    // 4) Crie uma variável chamada "multiplicacao" que receba a multiplicação das duas variáveis criadas no exercício 1
+    let multiplicacao = valor1 * valor2;
+    
+    // 5) Crie uma variável chamada "divisao" que receba a divisão das duas variáveis criadas no exercício 1
+    let divisao = valor1 / valor2;
+
+    // 6) Mostre cada resultado no console
+    console.log(soma);
+    console.log(subtracao);
+    console.log(multiplicacao);
+    console.log(divisao);
+
+    console.log(soma, subtracao, multiplicacao, divisao);
+
+
+    /* Alterando a ordem de cálculo
+    com o uso de parênteses: neste caso,
+    primeiro ocorrerá a soma de a + b, e
+    depois, a divisão do resultado por 2. */
+    let a = 100;
+    let b = 20;
+    let media = (a + b) / 2;    
+    console.log(media);
+    
+    /* Saída de dados personalizada
+    Frase para exemplo:
+    Olá! Me chamo Chapolin Colorado e não vejo a hora de acabar o ano de 2025. */
+
+    // Forma 1: CONCATENAÇÃO (tradicional, antiga)
+    console.log("Olá! Me chamo "+aluno+" e não vejo a hora de acabar o ano de "+ano+".");
+    
+    let frase = "Estamos estudando JavaScript na escola Senac ";
+    frase += "Penha, no curso de Desenvolvedor Full-stack ";
+    frase += "no ano de "+ano;
+
+    // No exemplo acima usamos += (significa concatena e atribui)
+
+    console.log(frase);
+
+
+    // Forma 2: TEMPLATE LITERAL/STRING (moderna)
+    console.log(`Olá! Me chamo ${aluno} e não vejo a hora de acabar o ano de ${ano}.`);
+    
+    // As duas formas abaixo estão corretas!
+    console.log("Soma: "+soma); // com aspas
+    console.log(`Soma: ${soma}`); // com crase e ${}
+
+    console.log(typeof soma);
+    console.log(typeof aluno);
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    </script>
+</body>
+</html>
