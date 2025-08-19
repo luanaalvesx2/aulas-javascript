@@ -35,7 +35,7 @@ console.log("\nExercício Condicional");
 
 //1. Crie duas variáveis conforme a seguir:
 // - Nota 1 (contendo um valor de 0 a 10)
-let nota1 = 5
+let nota1 = 7
 //- Nota 2 (contendo outro valor de 0 a 10)
 let nota2 = 9
 //2. Crie uma variável chamada "Média" que receberá o valor CALCULADO da média das duas notas informadas.
@@ -44,11 +44,29 @@ let media = (nota1 + nota2) / 2;
 
 //3. Programe uma condicional que verifique o valor da média calculada. Se a média for maior/igual a 7, mostre "aprovado". 
 //Caso contrário, mostre "reprovado".
-console.log("Média: "+media);
+console.log("\nMédia: " + media);
 if (media >= 7) {
     console.log("Você está Aprovado!");
 } else {
     console.log("Você está Reprovado!");
 }
 
+console.log("\nExemplo 3");
 
+//Condicional encadeada ou sucessiva
+
+/* Verificando o desempenho do aluno conforme a média:
+- Média acima de 9? ótimo
+- Média acima de 7? bom
+- Média acima de 5? ruim
+- Média até 5? pessimo */
+if (media > 9) {
+    console.log("ÓTIMO!");
+} else if (media > 7) {
+    console.log("BOM!");
+} else if (media > 5) {
+    console.log("RUIM!");
+}
+else {
+    console.log("PESSIMO!");
+}
