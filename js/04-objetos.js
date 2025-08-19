@@ -91,5 +91,11 @@ console.log(`
     Nome do aluno: ${aluno.nome_completo},
     Telefone celular: ${aluno.lista_de_telefone[1]},
     Bairro: ${aluno.const_endereço.bairro}.`);
+/*
+Sobre os caracteres delimitadores:
+ 
+(parênteses)	-> operações, funções
+[colchetes]	-> array/vetor
+{chaves}	-> objeto, funções, condicionais, loops, template string */
 
 
