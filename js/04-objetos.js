@@ -79,7 +79,7 @@ const aluno = {
         "(11) 4989-5261",
         "(11) 95674-9853" 
     ],
-    const_endereço: {
+    endereco: {
         rua: "Rua Amaral II",
         número: "456",
         bairro: "Jardim Camelia"
@@ -90,7 +90,11 @@ const aluno = {
 console.log(`
     Nome do aluno: ${aluno.nome_completo},
     Telefone celular: ${aluno.lista_de_telefone[1]},
-    Bairro: ${aluno.const_endereço.bairro}.`);
+    Bairro: ${aluno.endereco.bairro}.`);
+
+    /*concatenação*/
+    console.log("O aluno "+aluno.nome_completo+", cujo o contato é "+aluno.lista_de_telefone[1]+", mora no bairro "+aluno.endereco.bairro+".");
+    
 /*
 Sobre os caracteres delimitadores:
  
