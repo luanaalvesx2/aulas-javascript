@@ -9,10 +9,11 @@ console.log("Exempolo &&");
 let idade = 20;
 let temCarta = true;
 
-if (idade >=18 && temCarta === true) {
-    console.log("Pode dirigir");  
+//if (idade >=18 && temCarta=== true) { comparação explicita
+if (idade >= 18 && temCarta === true) { //comparção implicita
+    console.log("Pode dirigir");
 } else {
-    console.log("Não pode dirigir");   
+    console.log("Não pode dirigir");
 }
 
 /* sobre duplo e triplo sinal de igual 
@@ -25,3 +26,19 @@ let b = '10'; /*passa a se tornar texto e não e considerado com === */
 let resultadoComparacao = a === b; //FALSE
 console.log(resultadoComparacao);
 /*valor ==, valor e dados === */
+
+console.log("\nExemplo ||");
+//|| -> retorna Verdadeiro se pelo menos uma das condições for Verdadeira
+let feriado = true;
+let fimDeSemana = false;
+
+//if (feriado === true || fimDeSemana === true) {
+if (feriado || fimDeSemana) {
+    console.log("Não tem aula!");
+} else {
+    console.log("Tem aula!");
+}
+
+
+
+
