@@ -22,4 +22,14 @@ for(let k = 10; k >= 1; k-- ){
     
 }
 
+console.log("\nExemplo 4: loop e array");
+
+const bandas =["Slayer", "Metalica", "Iron Maiden", "Nightwish", "Judas Priest"];
+
+for (let i = 0; i < bandas.length; i++) {
+    console.log(bandas[i]);
+    
+}
+
+
  
