@@ -41,3 +41,14 @@ exemplo3();
 Quando uma função precisa de valores/dados para algum tipo de processamento, ela recebe valores/dados através de parâmetros/argumentos entre os parênteses.
 
 Geralmente, ao terminar o processamento de dados, a função "retorna" para fora um resultado. */
+
+console.log("\nExemplo 4: função de parâmetro opcional");
+
+function saudacao( nome = "Visitante"){
+    console.log("Olá, "+nome);
+}
+
+saudacao("Luana");
+saudacao("Liz");
+saudacao("Luan");
+saudacao(); // nesse caso, é usado "Visitante" como valor
