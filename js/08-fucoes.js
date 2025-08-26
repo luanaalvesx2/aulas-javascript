@@ -67,3 +67,16 @@ let resultado2 = multiplicar (200,10);
 //Exibimos o resultado
 console.log("Resultado 1: "+resultado1);
 console.log("Resultado 2: "+resultado2);
+
+console.log("\nExemplo 6: Simplificando com Arrow Function");
+
+//Versão 1: Sintaxe declarada/nomeada
+/*function somar(valor1, valor2) {
+    return valor1 + valor2;
+}*/
+
+//Versão 2: Sintaxe Arrow Function com retorno implícito
+const somar = (valor1, valor2) => valor1 + valor2;
+
+
+console.log( somar(150, 500) );
