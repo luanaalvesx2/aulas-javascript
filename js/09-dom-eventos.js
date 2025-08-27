@@ -57,3 +57,19 @@ referencias.addEventListener("click", function(){
     exercicio01.style.textAlign = "left";
 });
 
+/* exemplo 3: modo noturno */
+
+const botaoModoNoturno = document.querySelector("#noturno");
+
+botaoModoNoturno.addEventListener("click", function(){
+    /* Usamos o toggle para alterar entre adicionar a classe ou remover a classe, de acordo com cada clique no botão. */
+    pagina.classList.toggle("modo-noturno");
+    
+    
+});
+
+/* DESAFIOS!
+    1) Faça a mudança de cores acontecer gradualmente (use o transition!)
+    2) Se o modo noturno estiver ativado, ou seja, se a classe modo-noturno
+    estiver aplicada à página, faça o texto do botão mudar para "Desativar".
+    Caso contrário, faça o texto do botão exibir "Ativar". */
